@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="23dp"
+    android:layout_margin="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp">
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:text="Title"
+            android:textColor="@color/toolbar"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemImage" />
+
+        <TextView
+            android:id="@+id/itemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/itemTitle"
+            app:layout_constraintStart_toStartOf="@id/itemTitle"
+            android:layout_marginTop="3dp"
+            android:textSize="15dp"
+            android:textColor="#5c7383"
+            android:text="Item Desc"
+            />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#f898b6"
+            app:layout_constraintTop_toBottomOf="@id/itemDesc"
+            app:layout_constraintStart_toStartOf="@id/itemDesc"
+            android:textSize="15dp"
+            android:text="Item Price"
+            />
+
+        <TextView
+            android:id="@+id/itemLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Item Location"
+            android:textColor="#a2b0bc"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemPrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintStart_toEndOf="@id/itemPrice"
+            app:layout_constraintTop_toTopOf="@id/itemPrice"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/heart_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toEndOf="@id/itemLocation"
+            app:layout_constraintTop_toTopOf="@id/itemLocation"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

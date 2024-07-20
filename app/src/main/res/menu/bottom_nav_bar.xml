@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Buy"
+        android:icon="@drawable/cart"
+        />
+
+    <item android:title="Myads"
+        android:icon="@drawable/advertising"
+        />
+
+    <item android:title="Saved"
+        android:icon="@drawable/heart"
+        />
+
+    <item android:title="Chats"
+        android:icon="@drawable/chat"
+        />
+</menu>
